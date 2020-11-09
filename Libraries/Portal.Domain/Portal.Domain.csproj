@@ -121,9 +121,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Common\BaseEntity.cs" />
+    <Compile Include="Common\CommentStatus.cs" />
     <Compile Include="Common\MediaType.cs" />
+    <Compile Include="Entities\Article.cs" />
+    <Compile Include="Entities\ArticleCategory.cs" />
+    <Compile Include="Entities\ArticleMedia.cs" />
     <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Comment.cs" />
+    <Compile Include="Entities\Contact.cs" />
+    <Compile Include="Entities\Course.cs" />
+    <Compile Include="Entities\CourseAction.cs" />
+    <Compile Include="Entities\CourseLesson.cs" />
     <Compile Include="Entities\Media.cs" />
+    <Compile Include="Entities\Poll.cs" />
+    <Compile Include="Entities\PollAnswer.cs" />
+    <Compile Include="Entities\PollVotingRecord.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Portal.Domain.rd.xml" />
