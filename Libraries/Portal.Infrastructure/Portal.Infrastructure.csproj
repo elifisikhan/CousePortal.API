@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{062AD5BA-81DF-439D-A53F-8DDFE9E2A9C7}</ProjectGuid>
+    <ProjectGuid>{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Portal.Domain</RootNamespace>
-    <AssemblyName>Portal.Domain</AssemblyName>
+    <RootNamespace>Portal.Infrastructure</RootNamespace>
+    <AssemblyName>Portal.Infrastructure</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
@@ -120,33 +120,35 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Common\BaseEntity.cs" />
-    <Compile Include="Common\CommentStatus.cs" />
-    <Compile Include="Common\MaxLengthSize.cs" />
-    <Compile Include="Common\MediaType.cs" />
-    <Compile Include="Entities\Article.cs" />
-    <Compile Include="Entities\ArticleCategory.cs" />
-    <Compile Include="Entities\ArticleMedia.cs" />
-    <Compile Include="Entities\Category.cs" />
-    <Compile Include="Entities\Comment.cs" />
-    <Compile Include="Entities\Contact.cs" />
-    <Compile Include="Entities\Course.cs" />
-    <Compile Include="Entities\CourseAction.cs" />
-    <Compile Include="Entities\CourseLesson.cs" />
-    <Compile Include="Entities\Media.cs" />
-    <Compile Include="Entities\Poll.cs" />
-    <Compile Include="Entities\PollAnswer.cs" />
-    <Compile Include="Entities\PollVotingRecord.cs" />
-    <Compile Include="Entities\User.cs" />
+    <Compile Include="Persistence\Configurations\Contacts\ContactConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\Courses\CourseActionConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\Courses\CourseConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\Courses\CourseLessonConfiguratio.cs" />
+    <Compile Include="Persistence\Configurations\Medias\MediaConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\Polls\PollAnswerConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\Polls\PollConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\Polls\PollVotingRecordConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\Users\UserConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\Comments\CommentConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\Categories\CategoryConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\Articles\ArticleConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Portal.Domain.rd.xml" />
+    <EmbeddedResource Include="Properties\Portal.Infrastructure.rd.xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore">
+      <Version>3.1.9</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Portal.Domain\Portal.Domain.csproj">
+      <Project>{062ad5ba-81df-439d-a53f-8ddfe9e2a9c7}</Project>
+      <Name>Portal.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

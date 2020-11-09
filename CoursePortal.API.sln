@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Domain", "Libraries\Portal.Domain\Portal.Domain.csproj", "{062AD5BA-81DF-439D-A53F-8DDFE9E2A9C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Infrastructure", "Libraries\Portal.Infrastructure\Portal.Infrastructure.csproj", "{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,12 +47,33 @@ Global
 		{062AD5BA-81DF-439D-A53F-8DDFE9E2A9C7}.Release|x64.Build.0 = Release|x64
 		{062AD5BA-81DF-439D-A53F-8DDFE9E2A9C7}.Release|x86.ActiveCfg = Release|x86
 		{062AD5BA-81DF-439D-A53F-8DDFE9E2A9C7}.Release|x86.Build.0 = Release|x86
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Debug|ARM.ActiveCfg = Debug|ARM
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Debug|ARM.Build.0 = Debug|ARM
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Debug|ARM64.Build.0 = Debug|ARM64
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Debug|x64.ActiveCfg = Debug|x64
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Debug|x64.Build.0 = Debug|x64
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Debug|x86.ActiveCfg = Debug|x86
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Debug|x86.Build.0 = Debug|x86
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Release|ARM.ActiveCfg = Release|ARM
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Release|ARM.Build.0 = Release|ARM
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Release|ARM64.ActiveCfg = Release|ARM64
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Release|ARM64.Build.0 = Release|ARM64
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Release|x64.ActiveCfg = Release|x64
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Release|x64.Build.0 = Release|x64
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Release|x86.ActiveCfg = Release|x86
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{062AD5BA-81DF-439D-A53F-8DDFE9E2A9C7} = {639168A9-F0C2-4381-8DD1-A45E27A00951}
+		{85E3B434-ED87-4F5C-96DF-1B47D39D2C07} = {639168A9-F0C2-4381-8DD1-A45E27A00951}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9E8FEAB-FC0A-4E50-AF6A-60C5D9F10F7A}
