@@ -132,6 +132,8 @@
     <Compile Include="Persistence\Configurations\Comments\CommentConfiguration.cs" />
     <Compile Include="Persistence\Configurations\Categories\CategoryConfiguration.cs" />
     <Compile Include="Persistence\Configurations\Articles\ArticleConfiguration.cs" />
+    <Compile Include="Persistence\IRepository.cs" />
+    <Compile Include="Persistence\PortalDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Portal.Infrastructure.rd.xml" />
   </ItemGroup>
