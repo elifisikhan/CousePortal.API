@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Windows.Networking.NetworkOperators;
 
 namespace Portal.Domain.Entities
 {
