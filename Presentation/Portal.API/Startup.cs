@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +28,9 @@ namespace Portal.API
         {
             services.InjectApplicationServices();
             services.AddCustomizedDataStore(Configuration);
-            services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation( m => m.RegisterValidatorsFromAssemblyContaining<Startup>());
+            services.IntegrateSwagger(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +44,7 @@ namespace Portal.API
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.ConfigSwagger();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
